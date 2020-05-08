@@ -71,17 +71,16 @@ os.system("clear")
 
 os.system('clear')
 os.system('git add -A')
-os.system("git commit -m 'Update to your_arsmap.html'")
+os.system("git commit -m 'Update to open_artsmap'")
 os.system("git push")
-os.system('clear')
-os.system('clear')
 
+os.system('clear')
 print("\n\nYour map index.html file is complete! Your GitHub repo has also been automatically updated.")
 print("\nYou now have a fully formatted and functional HTML file with the temporary title 'index.html' so it opens up as the automatic homepage of any folder you put it in. If you know a little HTML you can edit and style this file freely, it's not dependant on anything except the open source map resource its referencing online.")
 print("\nThanks for using the open arts map generator! The generator will automatically open your map in your default browser and quit momentarily...\n\n")
 os.system("sleep 10")
 os.system('clear')
-# os.system('open your_artsmap.html')
+# os.system('open index.html')
 
 
 
