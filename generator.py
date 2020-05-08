@@ -39,7 +39,11 @@ dataframe = pandas.read_csv("data.csv")
 # locator = geopy.geocoders.Nominatim(user_agent='myGeocoder')
 # location = locator.geocode(cities[0])
 
-map = folium.Map(location=[0, 0], zoom_start=14, tiles="CartoDB positron")
+try:
+  map = folium.Map(location=[0, 0], zoom_start=14, tiles="CartoDB positron")
+except:
+  map = folium.Map(location=[0, 0], zoom_start=14)
+
 # map = folium.Map(location=[location.latitude, location.longitude], zoom_start=14, tiles="CartoDB positron")
 # for c in cities:
 #   location = locator.geocode(c)
