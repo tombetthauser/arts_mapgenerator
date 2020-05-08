@@ -41,13 +41,14 @@ names = list(dataframe["name"])
 #   websites[cities[len(cities)-1]] = userinput
 #   os.system('clear')
 
-# locator = geopy.geocoders.Nominatim(user_agent='myGeocoder')
-# location = locator.geocode(cities[0])
+locator = geopy.geocoders.Nominatim(user_agent='myGeocoder')
+location = locator.geocode(addresses[0])
+loclist = [location.latitude, location.longitude]
 
 try:
-  map = folium.Map(location=[0, 0], zoom_start=14, tiles="CartoDB positron")
+  map = folium.Map(location=loclist, zoom_start=14, tiles="CartoDB positron")
 except:
-  map = folium.Map(location=[0, 0], zoom_start=14)
+  map = folium.Map(location=loclist, zoom_start=14)
 
 # map = folium.Map(location=[location.latitude, location.longitude], zoom_start=14, tiles="CartoDB positron")
 # for c in cities:
