@@ -10,6 +10,7 @@ brew install python3
 python3 get-pip.py
 
 pip3 install geopandas
+pip3 install pandas
 pip3 install folium
 pip3 install geopy
 
