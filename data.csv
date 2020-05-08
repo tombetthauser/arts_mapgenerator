@@ -1,7 +1,6 @@
-name,                         address,                                      website
-
-"artspace1616",               "1616 Del Paso Blvd, Sacramento, CA 95815",   "https://www.facebook.com/artspace1616/"
-"Verge Center for the Arts",  "625 S St, Sacramento, CA 95811",             "https://www.vergeart.com/"
-"Axis Gallery",               "625 S St, Sacramento, CA 95811",             "http://axisgallery.org/"
-"B Sakata Garo",              "923 20th St, Sacramento, CA 95811",          "http://www.bsakatagaro.com/"
-"The Garage on the Grove",    "2287 Grove Ave, Sacramento, CA 95815",       "https://www.facebook.com/TheGarageontheGrove/"
+name,address,website
+"artspace1616","1616 Del Paso Blvd, Sacramento, CA 95815","https://www.facebook.com/artspace1616/"
+"Verge Center for the Arts","625 S St, Sacramento, CA 95811","https://www.vergeart.com/"
+"Axis Gallery","625 S St, Sacramento, CA 95811","http://axisgallery.org/"
+"B Sakata Garo","923 20th St, Sacramento, CA 95811","http://www.bsakatagaro.com/"
+"The Garage on the Grove","2287 Grove Ave, Sacramento, CA 95815","https://www.facebook.com/TheGarageontheGrove/"

@@ -11,6 +11,11 @@ print('\nThe map generator will begin building your map momentarily...\n\n')
 os.system("clear")
 
 dataframe = pandas.read_csv("data.csv")
+addresses = list(dataframe["address"])
+websites = list(dataframe["website"])
+names = list(dataframe["name"])
+
+
 # cities = []
 # names = {}
 # websites = {}
@@ -39,8 +44,10 @@ dataframe = pandas.read_csv("data.csv")
 # locator = geopy.geocoders.Nominatim(user_agent='myGeocoder')
 # location = locator.geocode(cities[0])
 
-try:    map = folium.Map(location=[0, 0], zoom_start=14, tiles="CartoDB asspositron")
-except: map = folium.Map(location=[0, 0], zoom_start=14)
+try:
+  map = folium.Map(location=[0, 0], zoom_start=14, tiles="CartoDB positron")
+except:
+  map = folium.Map(location=[0, 0], zoom_start=14)
 
 # map = folium.Map(location=[location.latitude, location.longitude], zoom_start=14, tiles="CartoDB positron")
 # for c in cities:
@@ -61,10 +68,10 @@ map.save("index.html")
 # f.write(contents)
 # f.close()
 
-os.system('clear')
-os.system('git add -A')
-os.system("git commit -m 'Update to open_artsmap'")
-os.system("git push")
+# os.system('clear')
+# os.system('git add -A')
+# os.system("git commit -m 'Update to open_artsmap'")
+# os.system("git push")
 
 os.system('clear')
 print("\n\nYour map index.html file is complete! Your GitHub repo has also been automatically updated.")
