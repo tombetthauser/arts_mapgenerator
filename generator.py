@@ -42,18 +42,28 @@ names = list(dataframe["name"])
 #   os.system('clear')
 
 locator = geopy.geocoders.Nominatim(user_agent='myGeocoder')
-location = locator.geocode(addresses[0])
+
+split = addresses[0].split(', ')
+lastele = split[len(split) - 1]
+address = list(locator.geocode(lastele))
+city = address[0].split(', ')[0]
+location = locator.geocode(city)
 loclist = [location.latitude, location.longitude]
 
 try:
-  map = folium.Map(location=loclist, zoom_start=14, tiles="CartoDB positron")
+   map = folium.Map(location=loclist, zoom_start=13.25, tiles="CartoDB positron")
 except:
-  map = folium.Map(location=loclist, zoom_start=14)
+   map = folium.Map(location=loclist, zoom_start=13.25)
 
-# map = folium.Map(location=[location.latitude, location.longitude], zoom_start=14, tiles="CartoDB positron")
-# for c in cities:
-#   location = locator.geocode(c)
-#   map3.add_child(folium.Marker(location=[location.latitude, location.longitude], popup=f"{names[c]}'s' Studio\n{websites[c]}", icon=folium.Icon(color='blue')))
+for name, address, website in zip(names, addresses, websites):
+  location = locator.geocode(address)
+  loclist = [location.latitude, location.longitude]
+  map.add_child(folium.Marker(
+    location=loclist, 
+    popup=f"<div style='width: 300px;'><h4>{name}</h4>\n{address}<br><a target='new' href='{website}'>{website}</a></div>", 
+    icon=folium.Icon(color='blue')
+  )
+)
 
 map.save("index.html")
 
