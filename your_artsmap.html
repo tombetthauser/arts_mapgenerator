@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_0c60eb69eae74547a1a99a1840395298 {
+                #map_afe202b04cb9467e84af5dc7db9415f4 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,15 +35,15 @@
 </head>
 <body>    
     
-<div class = 'user-title-div' style = 'text-align: center; height: 200px; font-size: 25px; line-height: 200px;'>Toms Map Page</div>            <div class="folium-map" id="map_0c60eb69eae74547a1a99a1840395298" ></div>
+<div class = 'user-title-div' style = 'text-align: center; height: 200px; font-size: 25px; line-height: 200px;'>Toms Art Map</div>            <div class="folium-map" id="map_afe202b04cb9467e84af5dc7db9415f4" ></div>
         
 </body>
 <script>    
     
-            var map_0c60eb69eae74547a1a99a1840395298 = L.map(
-                "map_0c60eb69eae74547a1a99a1840395298",
+            var map_afe202b04cb9467e84af5dc7db9415f4 = L.map(
+                "map_afe202b04cb9467e84af5dc7db9415f4",
                 {
-                    center: [45.3842702, -73.995482],
+                    center: [38.676839, -90.2497213],
                     crs: L.CRS.EPSG3857,
                     zoom: 14,
                     zoomControl: true,
@@ -55,32 +55,32 @@
 
         
     
-            var tile_layer_8b25ba261a6b43ee889f4c7707452ddb = L.tileLayer(
+            var tile_layer_ad29b9ab63624e91a46560be884e44fa = L.tileLayer(
                 "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_0c60eb69eae74547a1a99a1840395298);
+            ).addTo(map_afe202b04cb9467e84af5dc7db9415f4);
         
     
-            var marker_0adc6477ac0d4f2e8746b61957a1e60f = L.marker(
-                [45.3842702, -73.995482],
+            var marker_616548b8f219497689ad4364d1e2dda8 = L.marker(
+                [38.676839, -90.2497213],
                 {}
-            ).addTo(map_0c60eb69eae74547a1a99a1840395298);
+            ).addTo(map_afe202b04cb9467e84af5dc7db9415f4);
         
     
-            var icon_d51df14d2fb64b20aedbbda53b70e2ab = L.AwesomeMarkers.icon(
+            var icon_2260d1ea795841a38e2d0a0a3b1ae8cf = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_0adc6477ac0d4f2e8746b61957a1e60f.setIcon(icon_d51df14d2fb64b20aedbbda53b70e2ab);
+            marker_616548b8f219497689ad4364d1e2dda8.setIcon(icon_2260d1ea795841a38e2d0a0a3b1ae8cf);
         
     
-        var popup_a82026ba391b4b9eb1eca89f11c87495 = L.popup({"maxWidth": "100%"});
+        var popup_bfd5e8ac132945dea4a29906b99aa350 = L.popup({"maxWidth": "100%"});
 
         
-            var html_ddbd0fc43a15423492edc33234345d62 = $(`<div id="html_ddbd0fc43a15423492edc33234345d62" style="width: 100.0%; height: 100.0%;">Tom Betthauser's' Studio http:tombetthauser.com</div>`)[0];
-            popup_a82026ba391b4b9eb1eca89f11c87495.setContent(html_ddbd0fc43a15423492edc33234345d62);
+            var html_c131dfe298fb4fb9a13a502803e7a502 = $(`<div id="html_c131dfe298fb4fb9a13a502803e7a502" style="width: 100.0%; height: 100.0%;">Tom Betthauser's' Studio http://tombetthauser.com</div>`)[0];
+            popup_bfd5e8ac132945dea4a29906b99aa350.setContent(html_c131dfe298fb4fb9a13a502803e7a502);
         
 
-        marker_0adc6477ac0d4f2e8746b61957a1e60f.bindPopup(popup_a82026ba391b4b9eb1eca89f11c87495)
+        marker_616548b8f219497689ad4364d1e2dda8.bindPopup(popup_bfd5e8ac132945dea4a29906b99aa350)
         ;
 
         

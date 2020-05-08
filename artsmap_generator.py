@@ -86,6 +86,7 @@ print("\nIf you would like to automatically update your live github page hit ent
 gitpush = input("\nThanks again for using the open arts map generator! ")
 
 if gitpush == '':
+  os.system('clear')
   os.system('git add -A')
   os.system("git commit -m 'Update to your_arsmap.html'")
   os.system("git push")
