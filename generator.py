@@ -40,7 +40,7 @@ dataframe = pandas.read_csv("data.csv")
 # location = locator.geocode(cities[0])
 
 try:
-  map = folium.Map(location=[0, 0], zoom_start=14, tiles="CartoDB positron")
+  map = folium.Map(location=[0, 0], zoom_start=14, tiles="CartoDB asspositron")
 except:
   map = folium.Map(location=[0, 0], zoom_start=14)
 
