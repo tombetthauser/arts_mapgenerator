@@ -15,31 +15,16 @@ addresses = list(dataframe["address"])
 websites = list(dataframe["website"])
 names = list(dataframe["name"])
 
+os.system('clear')
+print('\n\nWelcome to the open arts map generator, a way for artists, galleries and arts institutions to make and host free fully interactive and mobile-friendly map websites to assist in promoting arts events like open studios or exhibition opening receptions.\n')
+print('First, please enter the full case-sensitive text of what you want your map / website title to be.')
+title = input('\nYour web map title: ')
 
-# cities = []
-# names = {}
-# websites = {}
-# userinput = False
+os.system('clear')
+subtitle = input('\n\nIf you would like some optional text below your main title enter it here. Otherwise leave this blank and hit enter: ')
 
-# os.system('clear')
-# print('\n\nWelcome to the open arts map generator, a way for artists, galleries and arts institutions to make and host free fully interactive and mobile-friendly map websites to assist in promoting arts events like open studios or exhibition opening receptions.\n')
-# print('First, please enter the full case-sensitive text of what you want your websites title to be. Be careful with special charactors as they may break the website builder (if so you can always just start over by running this again).')
-# title = input('\nYour web map title: ')
-
-# os.system('clear')
-# while userinput not in ('done', 'finished', 'complete', 'next', ''):
-#   userinput = input(
-#       "\n\nPlease enter an artist's studio location (address, city, country): ")
-#   cities.append(userinput)
-#   if userinput in ('done', 'finished', 'complete', 'next', ''):
-#     break
-#   userinput = input("Please enter that artist's name: ")
-#   names[cities[len(cities)-1]] = userinput
-#   if userinput in ('done', 'finished', 'complete', 'next', ''):
-#     break
-#   userinput = input("Please enter that artist's website: ")
-#   websites[cities[len(cities)-1]] = userinput
-#   os.system('clear')
+os.system('clear')
+mainlink = input('\n\nLastly, if you would like an optional website link below your subtitle text enter it here. Otherwise leave this blank and hit enter: ')
 
 locator = geopy.geocoders.Nominatim(user_agent='myGeocoder')
 
@@ -48,7 +33,7 @@ lastele = split[len(split) - 1]
 address = list(locator.geocode(lastele))
 city = address[0].split(', ')[0]
 location = locator.geocode(city)
-loclist = [location.latitude, location.longitude]
+loclist = [location.latitude - 0.0225, location.longitude]
 
 try:
    map = folium.Map(location=loclist, zoom_start=13.25, tiles="CartoDB positron")
@@ -67,18 +52,46 @@ for name, address, website in zip(names, addresses, websites):
 
 map.save("index.html")
 
-# f = open("your_artsmap.html", "r")
-# contents = f.readlines()
-# f.close()
+f = open("index.html", "r")
+contents = f.readlines()
+f.close()
 
-# contents.insert(
-#     37, f"<div class = 'user-title-div' style = 'text-align: center; height: 200px; font-size: 25px; line-height: 200px;'>{title}</div>")
+title = "Sacramento Arts Map"
+subtitle = "Welcome to the open arts map generator, a way for artists, galleries and arts institutions to make and host free fully interactive and mobile-friendly map websites to assist in promoting arts events like open studios or exhibition opening receptions. For a quick and easy step-by-step guide on how to make your own arts map website and host it for free check out the readme file at the GitHub link below. This free tool is built using open source map and data libraries."
+mainlink = "https://github.com/tombetthauser/open_artsmap"
 
-# f = open("your_artsmap.html", "w")
-# contents = "".join(contents)
-# f.write(contents)
-# f.close()
+if mainlink == "" and subtitle == "":
+  html = (
+    f"<div class='user-title-div' style='text-align: center; height: 200px; font-size: 25px; line-height: 200px;'>{title}</div>"
+  )
+elif mainlink == "":
+  html = (
+    "<div class='user-title-div' style='text-align: center; height: 300px; font-size: 25px; padding-top: 65px'>",
+    f"{title}",
+    "<div class='user-title-div' style='display: block; text-align: center; height: 100px; font-size: 15px; width: 500px; margin: 15px auto;'>",
+    f"{subtitle}",
+    "</div></div>",
+  )
+else:
+  html = (
+    "<div class='user-title-div' style='text-align: center; font-size: 25px; padding-top: 50px; padding-bottom: 40px'>",
+    f"{title}",
+    "<div class='user-title-div' style='display: block; text-align: center; font-size: 15px; width: 500px; max-width: 80%; margin: 15px auto;'>",
+    f"{subtitle}",
+    "</div>",
+    f"<a target='new' style='font-size: 15px;' href={mainlink}>{mainlink}</a>",
+    "</div>",
+  )
 
+
+contents.insert(37, "".join(html))
+
+f = open("index.html", "w")
+contents = "".join(contents)
+f.write(contents)
+f.close()
+
+## Automatic GitHub Commit and Push
 # os.system('clear')
 # os.system('git add -A')
 # os.system("git commit -m 'Update to open_artsmap'")
@@ -91,6 +104,3 @@ print("\nThanks for using the open arts map generator! The generator will automa
 # os.system("sleep 10")
 os.system('clear')
 os.system('open index.html')
-
-
-
