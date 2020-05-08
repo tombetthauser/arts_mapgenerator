@@ -90,3 +90,4 @@ if gitpush == '':
   os.system('git add -A')
   os.system("git commit -m 'Update to your_arsmap.html'")
   os.system("git push")
+  os.system('clear')
