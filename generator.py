@@ -4,11 +4,11 @@ import pandas
 import geopy
 import os
 
-os.system('clear')
-print('\n\nWelcome to the open arts map builder! If an error occurs check the formatting of your data.csv file and try running the generator.py file again.')
-print('\nThe map generator will begin building your map momentarily...\n\n')
-# os.system("sleep 5")
-os.system("clear")
+# os.system('clear')
+# print('\n\nWelcome to the open arts map builder! If an error occurs check the formatting of your data.csv file and try running the generator.py file again.')
+# print('\nThe map generator will begin building your map momentarily...\n\n')
+# # os.system("sleep 5")
+# os.system("clear")
 
 dataframe = pandas.read_csv("data.csv")
 addresses = list(dataframe["address"])
