@@ -9,7 +9,8 @@ To build your own arts map website follow these steps:
 1. make a GitHub account or sign into your account
 2. follow GitHub's instructions to clone this project
 3. open your command line (Terminal on MacOS) and enter the cloned project folder
-4. run the **installer.sh** script file by entering the code below into your command prompt
+4a. run the **installer.sh** script file by entering the code below into your command prompt
+4b. alternatively install Python3 Pip3 and install the Pandas, GeoPandas, Folium and Geopy Python libraries
 ```
   bash installer.sh
 ```
