@@ -23,7 +23,6 @@ To build your own arts map website follow these steps:
 9. check to see that everything looks correct
 10. if you find errors fix them in your **data.csv** file and then run your **generator.py** file again
 11. your old map will automatically be replaced by the new one
-12. each time you run **generator.py** your GitHub will also be automatically updated  
   
   (instructions continued...)
 
@@ -33,6 +32,7 @@ To build your own arts map website follow these steps:
 ![A Sample Map](image.png)  
 ***  
 
+12. each time you run **generator.py** your GitHub will also be automatically updated  
 13. when you're satisfied go to the settings for your project on the GitHub website
 14. go into the settings for this project and turn on GitHub pages near the bottom
 15. this will give you a stand-alone link for your website
@@ -42,3 +42,12 @@ To build your own arts map website follow these steps:
   Your map website's is 100% yours, go share it with the world! 
 ```  
 ***  
+# Project Details
+
+![A Snake!](https://lh3.googleusercontent.com/proxy/EHzZIFwQTHuOlRdYwMPM_8CK_nscGcgWDLXP0y_IoVX3MEkf4pAB0rAsncXK40Qa54jU1Xf8L6e3wJpQ6iff2hqE2i209wj9rxgJfd5vq5TS2Ip5lT0LwhSBy_tCCaktDi3uJj0b)  
+  
+This project was built with **Python** using the **pandas**, **geopandas**, **folium**, **geopy** and **os** libraries to interface with the csv data, connect with the open source map reources underpinning the maps functionality and construct the automated **HTML** **CSS**, and **JavaScript** that constitutes the final product index.html file. The installer file was written specifically for this project in **bash** shell script.
+
+This was originally developed as two day project by [Tom Betthauser](http://www.tombetthauser.com/) in 2020.  
+
+***
