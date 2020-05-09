@@ -36,10 +36,9 @@ To build your own arts map website follow these steps:
 13. when you're satisfied go to the settings for your project on the GitHub website
 14. go into the settings for this project and turn on GitHub pages near the bottom
 15. this will give you a stand-alone link for your website
-16. play around with your index.html file as much as you'd like, you can find great tutorials for HTML, CSS and JavaScript on... 
+16. play around with your index.html file as much as you'd like, you can find great tutorials for HTML, CSS and JavaScript on **https://www.w3schools.com/** or **https://www.freecodecamp.org/**
+17. whenever you want to update your map simply change your **data.csv** file and then run your **generator.py** file again  
 ```
-  https://www.w3schools.com/
-```
-17. whenever you want to update your map simply change your **data.csv** file and then run your **generator.py** file again
-18. your map website's is 100% yours, go share it with the world! 
+  Your map website's is 100% yours, go share it with the world! 
+```  
 ***  
