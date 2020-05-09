@@ -30,6 +30,7 @@ To build your own arts map website follow these steps:
 ## A Sample Arts Map Website  
 
 ![A Sample Map](image.png)  
+[click here to check out the sample map](https://tombetthauser.github.io/python_map/index.html)
 ***  
 
 12. each time you run **generator.py** your GitHub will also be automatically updated  
