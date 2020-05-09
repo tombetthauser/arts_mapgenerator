@@ -1,7 +1,7 @@
-# Open Arts Map Generator
+# Arts Map Generator
 ### A Python-Based Map Website Generator for Artists
 
-Welcome to the open arts map generator, a way for artists, galleries and arts institutions to make and host free fully interactive and mobile-friendly map websites to assist in promoting arts events like open studios or exhibition opening receptions.
+Welcome to the arts map generator, a way for artists, galleries and arts institutions to make and host free fully interactive and mobile-friendly map websites to assist in promoting arts events like open studios or exhibition opening receptions.
 
 ***
 
