@@ -46,7 +46,7 @@ To build your own arts map website follow these steps:
 ***  
 # Project Details
 
-![python logo](https://upload.wikimedia.org/wikipedia/commons/f/f8/Python_logo_and_wordmark.svg)  
+![python logo](https://docs.humio.com/integrations/python.svg)  
   
 This project was built with **Python** using the **pandas**, **geopandas**, **folium**, **geopy** and **os** libraries to interface with the csv data, connect with the open source map reources underpinning the maps functionality and construct the automated **HTML** **CSS**, and **JavaScript** that constitutes the final product index.html file. The installer file was written specifically for this project in **bash** shell script.
 
