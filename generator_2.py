@@ -36,7 +36,7 @@ location = locator.geocode(city)
 loclist = [location.latitude - 0.0225, location.longitude]
 
 try:
-   map = folium.Map(location=loclist, zoom_start=13.25, tiles="CartoDB positron")
+   map = folium.Map(location=loclist, zoom_start=13.25, tiles="Stamen Toner")
 except:
    map = folium.Map(location=loclist, zoom_start=13.25)
 
@@ -46,7 +46,7 @@ for name, address, website in zip(names, addresses, websites):
   map.add_child(folium.Marker(
     location=loclist, 
     popup=f"<div style='width: 300px;'><h4>{name}</h4>\n{address}<br><a target='new' href='{website}'>{website}</a></div>", 
-    icon=folium.Icon(color='blue')
+    icon=folium.Icon(color='black')
   )
 )
 

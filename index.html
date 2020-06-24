@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0b1300e667a5452e9e94b7036dedf274 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+<div class='user-title-div' style='text-align: center; font-size: 25px; padding-top: 50px; padding-bottom: 40px'>Sacramento Arts Map<div class='user-title-div' style='display: block; text-align: center; font-size: 15px; width: 500px; max-width: 80%; margin: 15px auto;'>Welcome to the open arts map generator, a way for artists, galleries and arts institutions to make and host free fully interactive and mobile-friendly map websites to assist in promoting arts events like open studios or exhibition opening receptions. For a quick and easy step-by-step guide on how to make your own arts map website and host it for free check out the readme file at the GitHub link below. This free tool is built using open source map and data libraries.</div><a target='new' style='font-size: 15px;' href=https://github.com/tombetthauser/open_artsmap>https://github.com/tombetthauser/open_artsmap</a></div>            <div class="folium-map" id="map_0b1300e667a5452e9e94b7036dedf274" ></div>
+        
+</body>
+<script>    
+    
+            var map_0b1300e667a5452e9e94b7036dedf274 = L.map(
+                "map_0b1300e667a5452e9e94b7036dedf274",
+                {
+                    center: [38.5590719, -121.4943996],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13.25,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f0965054320a46d98ab19c6a32f78729 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0b1300e667a5452e9e94b7036dedf274);
+        
+    
+            var marker_2d3b219f6a3b4ee68fa7e31fb02c46f8 = L.marker(
+                [38.6070296122449, -121.45706273469388],
+                {}
+            ).addTo(map_0b1300e667a5452e9e94b7036dedf274);
+        
+    
+            var icon_85074b14a8424f3ba9e5a65586ba6dd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2d3b219f6a3b4ee68fa7e31fb02c46f8.setIcon(icon_85074b14a8424f3ba9e5a65586ba6dd1);
+        
+    
+        var popup_7439054e8e6042bdbde43e926eb2dd39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_104aa6fd796f4aacbe1e5e76d516ebcb = $(`<div id="html_104aa6fd796f4aacbe1e5e76d516ebcb" style="width: 100.0%; height: 100.0%;"><div style='width: 300px;'><h4>Art Space 1616</h4> 1616 Del Paso Blvd, Sacramento, CA 95815<br><a target='new' href='https://www.facebook.com/artspace1616/'>https://www.facebook.com/artspace1616/</a></div></div>`)[0];
+            popup_7439054e8e6042bdbde43e926eb2dd39.setContent(html_104aa6fd796f4aacbe1e5e76d516ebcb);
+        
+
+        marker_2d3b219f6a3b4ee68fa7e31fb02c46f8.bindPopup(popup_7439054e8e6042bdbde43e926eb2dd39)
+        ;
+
+        
+    
+    
+            var marker_ffc5039ec84a452d9c79edbbb919ca01 = L.marker(
+                [38.571783897959186, -121.50262824489796],
+                {}
+            ).addTo(map_0b1300e667a5452e9e94b7036dedf274);
+        
+    
+            var icon_b4e9c9f550b64037b77c34a3ffb5adc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ffc5039ec84a452d9c79edbbb919ca01.setIcon(icon_b4e9c9f550b64037b77c34a3ffb5adc7);
+        
+    
+        var popup_e10c76ab9a0745048e118874fba02e9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bbc6e1a4bba4011b9e42bbde524602d = $(`<div id="html_3bbc6e1a4bba4011b9e42bbde524602d" style="width: 100.0%; height: 100.0%;"><div style='width: 300px;'><h4>Verge Center for the Arts</h4> 625 S St, Sacramento, CA 95811<br><a target='new' href='https://www.vergeart.com/'>https://www.vergeart.com/</a></div></div>`)[0];
+            popup_e10c76ab9a0745048e118874fba02e9d.setContent(html_3bbc6e1a4bba4011b9e42bbde524602d);
+        
+
+        marker_ffc5039ec84a452d9c79edbbb919ca01.bindPopup(popup_e10c76ab9a0745048e118874fba02e9d)
+        ;
+
+        
+    
+    
+            var marker_f9db3c783f5b43a9b88841d908d01465 = L.marker(
+                [38.571783897959186, -121.50262824489796],
+                {}
+            ).addTo(map_0b1300e667a5452e9e94b7036dedf274);
+        
+    
+            var icon_4e36057c2c76423a9012d7927d919157 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f9db3c783f5b43a9b88841d908d01465.setIcon(icon_4e36057c2c76423a9012d7927d919157);
+        
+    
+        var popup_47c35a4c11c34f3a8b3680e77af7f9d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ddbac798b3249dabb68af8d427f3b6b = $(`<div id="html_8ddbac798b3249dabb68af8d427f3b6b" style="width: 100.0%; height: 100.0%;"><div style='width: 300px;'><h4>Axis Gallery</h4> 625 S St, Sacramento, CA 95811<br><a target='new' href='http://axisgallery.org/'>http://axisgallery.org/</a></div></div>`)[0];
+            popup_47c35a4c11c34f3a8b3680e77af7f9d8.setContent(html_8ddbac798b3249dabb68af8d427f3b6b);
+        
+
+        marker_f9db3c783f5b43a9b88841d908d01465.bindPopup(popup_47c35a4c11c34f3a8b3680e77af7f9d8)
+        ;
+
+        
+    
+    
+            var marker_f27f364bd0414452a1d3acacf0f45b5b = L.marker(
+                [38.577378076923075, -121.4794896923077],
+                {}
+            ).addTo(map_0b1300e667a5452e9e94b7036dedf274);
+        
+    
+            var icon_2c7e62b69bea491998570fc5242f4f6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f27f364bd0414452a1d3acacf0f45b5b.setIcon(icon_2c7e62b69bea491998570fc5242f4f6a);
+        
+    
+        var popup_c2a73b3fd8e34c55a20c7a8f4eb4e2c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_912e07f935d044f88a264ce8cb3bc44e = $(`<div id="html_912e07f935d044f88a264ce8cb3bc44e" style="width: 100.0%; height: 100.0%;"><div style='width: 300px;'><h4>B Sakata Garo</h4> 923 20th St, Sacramento, CA 95811<br><a target='new' href='http://www.bsakatagaro.com/'>http://www.bsakatagaro.com/</a></div></div>`)[0];
+            popup_c2a73b3fd8e34c55a20c7a8f4eb4e2c0.setContent(html_912e07f935d044f88a264ce8cb3bc44e);
+        
+
+        marker_f27f364bd0414452a1d3acacf0f45b5b.bindPopup(popup_c2a73b3fd8e34c55a20c7a8f4eb4e2c0)
+        ;
+
+        
+    
+    
+            var marker_0b38408b08224a968766599117060f17 = L.marker(
+                [38.60865491304348, -121.45947686956521],
+                {}
+            ).addTo(map_0b1300e667a5452e9e94b7036dedf274);
+        
+    
+            var icon_4198c6c2884645c4851dd8135e20febc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b38408b08224a968766599117060f17.setIcon(icon_4198c6c2884645c4851dd8135e20febc);
+        
+    
+        var popup_1661eb4eab814ab19cdce6215c0ea937 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_550614a3d0584cc49f91b33ab0aa90de = $(`<div id="html_550614a3d0584cc49f91b33ab0aa90de" style="width: 100.0%; height: 100.0%;"><div style='width: 300px;'><h4>The Garage on the Grove</h4> 2287 Grove Ave, Sacramento, CA 95815<br><a target='new' href='https://www.facebook.com/TheGarageontheGrove/'>https://www.facebook.com/TheGarageontheGrove/</a></div></div>`)[0];
+            popup_1661eb4eab814ab19cdce6215c0ea937.setContent(html_550614a3d0584cc49f91b33ab0aa90de);
+        
+
+        marker_0b38408b08224a968766599117060f17.bindPopup(popup_1661eb4eab814ab19cdce6215c0ea937)
+        ;
+
+        
+    
+    
+            var marker_83eacb45fc4b4325a1ddbe2b0b96f9cc = L.marker(
+                [38.608647, -121.533193],
+                {}
+            ).addTo(map_0b1300e667a5452e9e94b7036dedf274);
+        
+    
+            var icon_3a334e40ef4b49a49a06febac321085c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_83eacb45fc4b4325a1ddbe2b0b96f9cc.setIcon(icon_3a334e40ef4b49a49a06febac321085c);
+        
+    
+        var popup_1dd2382193e542539353662316d01973 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7164ba5a0d07451c8e23fae2274dd300 = $(`<div id="html_7164ba5a0d07451c8e23fae2274dd300" style="width: 100.0%; height: 100.0%;"><div style='width: 300px;'><h4>Tom Betthauser's Studio</h4> 3198 Swallows Nest Drive, Sacramento, CA<br><a target='new' href='https://www.tombetthauser.com/'>https://www.tombetthauser.com/</a></div></div>`)[0];
+            popup_1dd2382193e542539353662316d01973.setContent(html_7164ba5a0d07451c8e23fae2274dd300);
+        
+
+        marker_83eacb45fc4b4325a1ddbe2b0b96f9cc.bindPopup(popup_1dd2382193e542539353662316d01973)
+        ;
+
+        
+    
+    
+            var marker_0f79c2443cdf4996b76964e0d8732d0b = L.marker(
+                [38.571783897959186, -121.50262824489796],
+                {}
+            ).addTo(map_0b1300e667a5452e9e94b7036dedf274);
+        
+    
+            var icon_03493c8133204443958b66b21d472a44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f79c2443cdf4996b76964e0d8732d0b.setIcon(icon_03493c8133204443958b66b21d472a44);
+        
+    
+        var popup_ee327a564be44f75a1e8e37142997627 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fea8e96ac4cd4eeaa25e1dc353a184c6 = $(`<div id="html_fea8e96ac4cd4eeaa25e1dc353a184c6" style="width: 100.0%; height: 100.0%;"><div style='width: 300px;'><h4>Erin Kaczkowski's Studio</h4> 625 S Street, Sacramento, CA<br><a target='new' href='https://www.erinkaczkowski.com/'>https://www.erinkaczkowski.com/</a></div></div>`)[0];
+            popup_ee327a564be44f75a1e8e37142997627.setContent(html_fea8e96ac4cd4eeaa25e1dc353a184c6);
+        
+
+        marker_0f79c2443cdf4996b76964e0d8732d0b.bindPopup(popup_ee327a564be44f75a1e8e37142997627)
+        ;
+
+        
+    
+</script>
