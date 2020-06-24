@@ -86,6 +86,7 @@ else:
 
 contents.insert(37, "".join(html))
 contents.insert(34, "".join('<link rel="stylesheet" href="generator_2.css"/>'))
+contents.append('<script src="generator_2.js"></script>')
 
 f = open("index.html", "w")
 contents = "".join(contents)
