@@ -62,25 +62,25 @@ mainlink = "https://github.com/tombetthauser/open_artsmap"
 
 if mainlink == "" and subtitle == "":
   html = (
-    f"<div class='user-title-div' style='text-align: center; height: 200px; font-size: 25px; line-height: 200px;'>{title}</div>"
+    # f"<div class='user-title-div' style='text-align: center; height: 200px; font-size: 25px; line-height: 200px;'>{title}</div>"
   )
 elif mainlink == "":
   html = (
-    "<div class='user-title-div' style='text-align: center; height: 300px; font-size: 25px; padding-top: 65px'>",
-    f"{title}",
-    "<div class='user-title-div' style='display: block; text-align: center; height: 100px; font-size: 15px; width: 500px; margin: 15px auto;'>",
-    f"{subtitle}",
-    "</div></div>",
+    # "<div class='user-title-div' style='text-align: center; height: 300px; font-size: 25px; padding-top: 65px'>",
+    # f"{title}",
+    # "<div class='user-title-div' style='display: block; text-align: center; height: 100px; font-size: 15px; width: 500px; margin: 15px auto;'>",
+    # f"{subtitle}",
+    # "</div></div>",
   )
 else:
-  html = (
-    "<div class='user-title-div' style='text-align: center; font-size: 25px; padding-top: 50px; padding-bottom: 40px'>",
-    f"{title}",
-    "<div class='user-title-div' style='display: block; text-align: center; font-size: 15px; width: 500px; max-width: 80%; margin: 15px auto;'>",
-    f"{subtitle}",
-    "</div>",
-    f"<a target='new' style='font-size: 15px;' href={mainlink}>{mainlink}</a>",
-    "</div>",
+  # html = (
+  #   "<div class='user-title-div' style='text-align: center; font-size: 25px; padding-top: 50px; padding-bottom: 40px'>",
+  #   f"{title}",
+  #   "<div class='user-title-div' style='display: block; text-align: center; font-size: 15px; width: 500px; max-width: 80%; margin: 15px auto;'>",
+  #   f"{subtitle}",
+  #   "</div>",
+  #   f"<a target='new' style='font-size: 15px;' href={mainlink}>{mainlink}</a>",
+  #   "</div>",
   )
 
 
