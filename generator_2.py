@@ -46,7 +46,7 @@ for name, address, website in zip(names, addresses, websites):
   map.add_child(folium.Marker(
     location=loclist, 
     popup=f"<div style='width: 300px;'><h4>{name}</h4>\n{address}<br><a target='new' href='{website}'>{website}</a></div>", 
-    icon=folium.Icon(color='black')
+    icon=folium.Icon(color='black', icon='')
   )
 )
 
@@ -73,7 +73,7 @@ elif mainlink == "":
     # "</div></div>",
   )
 else:
-  # html = (
+  html = (
   #   "<div class='user-title-div' style='text-align: center; font-size: 25px; padding-top: 50px; padding-bottom: 40px'>",
   #   f"{title}",
   #   "<div class='user-title-div' style='display: block; text-align: center; font-size: 15px; width: 500px; max-width: 80%; margin: 15px auto;'>",
@@ -85,6 +85,7 @@ else:
 
 
 contents.insert(37, "".join(html))
+contents.insert(34, "".join('<link rel="stylesheet" href="generator_2.css"/>'))
 
 f = open("index.html", "w")
 contents = "".join(contents)

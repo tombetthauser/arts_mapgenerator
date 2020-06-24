@@ -1,0 +1,1 @@
+let markers = document.getElementsByClassName('awesome-marker-icon-black')
