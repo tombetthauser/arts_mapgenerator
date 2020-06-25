@@ -83,8 +83,10 @@ else:
   #   "</div>",
   )
 
+# html2 = "<div id='map-key-div'>test key text</div>"
 
 contents.insert(37, "".join(html))
+# contents.insert(37, "".join(html2))
 contents.insert(34, "".join('<link rel="stylesheet" href="generator_2.css"/>'))
 contents.append('<script src="generator_2.js"></script>')
 

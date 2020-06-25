@@ -31,3 +31,16 @@ body {
   bottom: 0;
   box-shadow: -3px -3px 5px rgba(255,255,255,.5);
 }
+
+.user-title-div {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  width: 150px !important;
+}
+
+#map-key-div {
+  width: 500px !important;
+  height: 500px;
+  background-color: red;
+}
